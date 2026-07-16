@@ -260,11 +260,11 @@
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
-                  <!-- <div class="column has-text-centered">
+                  <div class="column has-text-centered">
                     <div class="publication-links">
-                        
+
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://zshanggu.github.io/zeyu-prefail/" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -273,7 +273,7 @@
                       </a>
                     </span>
 
-                    
+                    <!--
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -282,29 +282,40 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span> -->
+                  </span>
+                  -->
 
-                  
-                  <!-- <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                  <span class="link-block">
+                    <a href="https://zshanggu.github.io/zeyu-prefail/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
-                  </a> -->
+                  </a>
                 </span>
 
-                
-                <!-- <span class="link-block">
+                <span class="link-block">
+                  <a href="static/pdfs/Identifying_Precursor_of_Failure_in_Lift_and_Place_Task.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+              </span>
+
+                <!--
+                <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a> -->
+                </a>
               </span>
+              -->
             </div>
           </div>
         </div>
@@ -318,12 +329,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop style="width:100%; max-width:100%; display:block; margin:0 auto;">
+      <video poster="" id="tree" autoplay controls muted loop style="width:100%; max-width:640px; display:block; margin:0 auto;">
         <!-- Your video here -->
         <source src="static/videos/teaser.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
         We present PREFAIL, a proactive failure prediction framework for non-prehensile lift-and-place tasks that analyzes relative object–carrier motion and identifies the latest intervention time for actionable failure detection.
       </h2>
     </div>
@@ -449,7 +460,12 @@ In this paper, we investigate lift-and-place tasks for non-prehensile material h
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Some rollouts</h2>
+      <h2 class="title is-3 has-text-centered">Failure-Preventing Rollouts on Various Objects</h2>
+      <div class="content has-text-justified">
+        <p>
+          When a failure is predicted, PREFAIL intervenes early by scaling down joint speed in proportion to the predicted risk, avoiding the failure while adding only a small increase in cycle time compared to slowing down for the entire task.
+        </p>
+      </div>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
@@ -457,6 +473,7 @@ In this paper, we investigate lift-and-place tasks for non-prehensile material h
             <source src="static/videos/composite0.mp4"
             type="video/mp4">
           </video>
+          <p class="subtitle has-text-centered">Experiment on Box 1</p>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
@@ -464,6 +481,7 @@ In this paper, we investigate lift-and-place tasks for non-prehensile material h
             <source src="static/videos/composite1.mp4"
             type="video/mp4">
           </video>
+          <p class="subtitle has-text-centered">Experiment on Box 2</p>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
@@ -471,6 +489,7 @@ In this paper, we investigate lift-and-place tasks for non-prehensile material h
             <source src="static/videos/composite2.mp4"
             type="video/mp4">
           </video>
+          <p class="subtitle has-text-centered">Experiment on Box 3</p>
         </div>
         <div class="item item-video4">
           <video poster="" id="video4" autoplay controls muted loop height="100%">\
@@ -478,6 +497,7 @@ In this paper, we investigate lift-and-place tasks for non-prehensile material h
             <source src="static/videos/composite3.mp4"
             type="video/mp4">
           </video>
+          <p class="subtitle has-text-centered">Experiment on Box 4</p>
         </div>
         <div class="item item-video5">
           <video poster="" id="video5" autoplay controls muted loop height="100%">\
@@ -485,6 +505,7 @@ In this paper, we investigate lift-and-place tasks for non-prehensile material h
             <source src="static/videos/composite4.mp4"
             type="video/mp4">
           </video>
+          <p class="subtitle has-text-centered">Experiment on Box 5</p>
         </div>
       </div>
     </div>
@@ -497,18 +518,6 @@ In this paper, we investigate lift-and-place tasks for non-prehensile material h
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Supplementary Material</h2>
-
-      
-      <iframe  src="static/pdfs/Identifying_Precursor_of_Failure_in_Lift_and_Place_Task.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
 <!--End paper poster -->
 
 
