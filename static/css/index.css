@@ -163,13 +163,13 @@ body {
 }
 
 .publication-awards {
-    color: #ef4444;
+    color: #2563eb;
     width: fit-content;
     font-weight: 700;
-    background: linear-gradient(135deg, #fef2f2, #fee2e2);
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius);
-    border-left: 4px solid #ef4444;
+    border-left: 4px solid #2563eb;
     margin-top: 1rem;
 }
 
